@@ -1,3 +1,9 @@
+[![travis build](https://img.shields.io/travis/aaronccasanova/eslint-config-aaronccasanova.svg?style=flat-square)](https://travis-ci.org/aaronccasanova/eslint-config-aaronccasanova)
+[![version](https://img.shields.io/npm/v/eslint-config-aaronccasanova.svg?style=flat-square)](http://npm.im/eslint-config-aaronccasanova)
+[![downloads](https://img.shields.io/npm/dm/eslint-config-aaronccasanova.svg?style=flat-square)](http://npm-stat.com/charts.html?package=eslint-config-aaronccasanova&from=2019-03-10)
+[![MIT License](https://img.shields.io/npm/l/eslint-config-aaronccasanova.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)](https://github.com/semantic-release/semantic-release)
+
 # Modified: Wesbos Eslint and Prettier Setup
 
 These are my settings for ESLint and Prettier
