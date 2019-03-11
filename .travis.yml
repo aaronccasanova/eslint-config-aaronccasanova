@@ -8,6 +8,7 @@
 sudo: false
 language: node_js
 node_js:
+  # ?q=node: https://github.com/creationix/nvm#usage
   - node
 notifications:
   email: true
@@ -28,6 +29,7 @@ before_script:
   - npm prune
 script:
   #  - npm run test
-  - npm run build
+  # - npm run build
+  - echo "Testing Semantic Release"
 after_success:
   - npm run semantic-release
