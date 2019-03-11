@@ -1,5 +1,3 @@
-// https://eslint.org/docs/user-guide/configuring#configuration-file-formats
-
 module.exports = {
   extends: ['airbnb', 'prettier', 'prettier/react'],
   parser: 'babel-eslint',
@@ -116,3 +114,19 @@ module.exports = {
   },
   plugins: ['html', 'prettier', 'react-hooks'],
 }
+
+/**
+ * Eslint Config Resources
+ *
+ * TODO: look into prod/development configs
+ * @example:
+ * rule: {
+ *   no-debugger: inProd,
+ *   no-console: inProd,
+ * }
+ */
+
+// https://eslint.org/docs/user-guide/configuring#configuration-file-formats
+// https://eslint.org/docs/user-guide/configuring#configuring-rules
+// https://eslint.org/docs/rules/
+// https://eslint.org/docs/developer-guide/working-with-rules
