@@ -22,14 +22,11 @@ install:
   - rm -f package-lock.json && npm install
 # keep the npm cache around to speed up installs
 cache: npm
-# cache:
-#   directories:
-#     - "$HOME/.npm"
 before_script:
   - npm prune
 script:
-  #  - npm run test
+  # Script not needed in this repo
+  # - npm run test
   # - npm run build
-  - echo "Testing Semantic Release"
 after_success:
   - npm run semantic-release
