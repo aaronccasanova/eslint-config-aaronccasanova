@@ -1,0 +1,27 @@
+# Sematice-Release CLI: https://github.com/semantic-release/cli#what-it-does
+# * https://github.com/semantic-release/semantic-release/blob/master/docs/recipes/travis.md#nodejs-projects-configuration
+# Kent C Dodds Config: https://egghead.io/lessons/javascript-automating-releases-with-semantic-release
+
+# Travis.yml Cheat Sheet
+# https://devhints.io/travis
+
+sudo: false
+language: node_js
+node_js:
+  - "iojs"
+  - "7"
+cache: npm
+notifications:
+  email: true
+branches:
+  only:
+    - master
+before_install:
+  - npm i -g npm@^6.0.0
+before_script:
+  - npm prune
+script:
+  #  - npm run test
+  - echo 'hello'
+after_success:
+  - npm run semantic-release
