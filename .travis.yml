@@ -9,7 +9,6 @@ sudo: false
 language: node_js
 node_js:
   - "stable"
-cache: npm
 notifications:
   email: true
 branches:
@@ -17,6 +16,13 @@ branches:
     - master
 before_install:
   - npm i -g npm@^6.0.0
+install:
+  - npm ci
+# keep the npm cache around to speed up installs
+cache: npm
+# cache:
+#   directories:
+#     - "$HOME/.npm"
 before_script:
   - npm prune
 script:
