@@ -19,7 +19,7 @@ module.exports = {
     'no-debugger': 0,
     'no-alert': 0,
     'no-await-in-loop': 0,
-    'no-return-assign': ['error', 'except-parens'],
+    'no-return-assign': [2, 'except-parens'],
     'no-restricted-syntax': [
       2,
       'ForInStatement',
@@ -57,9 +57,9 @@ module.exports = {
     import: 0,
     'func-names': 0,
     'space-before-function-paren': 0,
-    'comma-dangle': 0,
+    'comma-dangle': [2, "always-multiline"],
     'max-len': 0,
-    semi: ['error', 'never'],
+    semi: [2, 'never'],
     'import/extensions': 0,
     'no-underscore-dangle': 0,
     'consistent-return': 0,
@@ -96,7 +96,7 @@ module.exports = {
     'prettier/prettier': [
       'error',
       {
-        trailingComma: 'es5',
+        trailingComma: 'all',
         singleQuote: true,
         printWidth: 80,
         semi: false,
