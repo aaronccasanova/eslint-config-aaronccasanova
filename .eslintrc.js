@@ -15,6 +15,7 @@ module.exports = {
     node: true,
   },
   rules: {
+    'no-unexpected-multiline': 'error',
     'no-debugger': 0,
     'no-alert': 0,
     'no-await-in-loop': 0,
