@@ -2,7 +2,7 @@ const eslintrc = require('./.eslintrc')
 
 module.exports = eslintrc
 
-let testEslint = 'testing eslint'
+const testEslint = 'testing eslint'
 
 console.log(
   'testing                                                                ',
