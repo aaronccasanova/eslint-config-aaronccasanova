@@ -84,14 +84,6 @@ module.exports = {
         allow: ['resolve', 'reject', 'done', 'next', 'err', 'error'],
       },
     ],
-    quotes: [
-      2,
-      'single',
-      {
-        avoidEscape: true,
-        allowTemplateLiterals: true,
-      },
-    ],
     'jsx-a11y/href-no-hash': 'off',
     'jsx-a11y/anchor-is-valid': [
       'warn',
