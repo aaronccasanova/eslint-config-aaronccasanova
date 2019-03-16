@@ -3,6 +3,7 @@ module.exports = {
   parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 2018,
+    sourceType: 'module',
     // Can I remove these now?
     ecmaFeatures: {
       impliedStrict: true,
@@ -12,8 +13,6 @@ module.exports = {
   env: {
     browser: true,
     node: true,
-    jquery: true,
-    jest: true,
   },
   rules: {
     'no-debugger': 0,
@@ -57,9 +56,7 @@ module.exports = {
     import: 0,
     'func-names': 0,
     'space-before-function-paren': 0,
-    'comma-dangle': [2, "always-multiline"],
     'max-len': 0,
-    semi: [2, 'never'],
     'import/extensions': 0,
     'no-underscore-dangle': 0,
     'consistent-return': 0,
@@ -93,15 +90,6 @@ module.exports = {
         allowTemplateLiterals: true,
       },
     ],
-    'prettier/prettier': [
-      'error',
-      {
-        trailingComma: 'all',
-        singleQuote: true,
-        printWidth: 80,
-        semi: false,
-      },
-    ],
     'jsx-a11y/href-no-hash': 'off',
     'jsx-a11y/anchor-is-valid': [
       'warn',
@@ -112,7 +100,7 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
   },
-  plugins: ['html', 'prettier', 'react-hooks'],
+  plugins: ['html', 'react-hooks'],
 }
 
 /**
