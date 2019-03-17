@@ -7,8 +7,5 @@ module.exports = {
       // 'jest --findRelatedTests',
       'git add',
     ],
-    // TODO: Look into running the linter globs synchronously
-    // the first without JSON for eslint, and prettier / git add for the other
-    // '**/*.+(js|md|ts|css|sass|less|graphql|yml|yaml|scss|json|vue)': []
   },
 }
